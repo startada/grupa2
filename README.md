@@ -1,2 +1,2 @@
 # grupa2
-svi projekti grupe 2
+inicijalni projekat grupe 2
