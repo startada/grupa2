@@ -1,2 +1,2 @@
 # grupa2
-pocetni projekat grupe 2
+inicijalni projekat grupe 2
