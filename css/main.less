@@ -1,140 +1,146 @@
 @import 'common/common';
 
 .playfair() {
-  font-family : 'Playfair Display', serif;
-  font-weight : 400;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
 .playfair-bold() {
-  font-family : 'Playfair Display', serif;
-  font-weight : 700;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 .playfair-black() {
-  font-family : 'Playfair Display', serif;
-  font-weight : 900;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
 }
 
 .ubuntu() {
-  font-family : 'Ubuntu', sans-serif;
-  font-weight : 400;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 .ubuntu-light() {
-  font-family : 'Ubuntu', sans-serif;
-  font-weight : 300;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .ubuntu-medium() {
-  font-family : 'Ubuntu', sans-serif;
-  font-weight : 500;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
 .ubuntu-bold() {
-  font-family : 'Ubuntu', sans-serif;
-  font-weight : 700;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
 @main-text-color: #626262;
 
 html, body {
-  font-size : 14px;
-  color : @main-text-color;
+  font-size: 14px;
+  color: @main-text-color;
 
   .playfair();
 }
+
 //############ mobile ################
 .mobile-navigation {
-  position : fixed;
-  z-index : 1010;
-  top : 0;
-  width : 100%;
-  height : 55px;
-  border-bottom : 1px solid #ededed;
-  background-color : white;
+  position: fixed;
+  z-index: 1010;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #ededed;
+  background-color: white;
   &:after {
-    display : table;
-    clear : both;
-    content : '';
+    display: table;
+    clear: both;
+    content: '';
   }
   .logo-container {
-    display : block;
-    float : left;
-    width : auto;
-    max-width : 199px;
-    height : 45px;
-    margin-top : 0;
-    margin-left : 20px;.vertical-center3lines();
+    display: block;
+    float: left;
+    width: auto;
+    max-width: 199px;
+    height: 45px;
+    margin-top: 0;
+    margin-left: 20px;
+
+    .vertical-center3lines();
 
     a {
-      display : block;
-      overflow : hidden;
-      height : 45px;
+      display: block;
+      overflow: hidden;
+      height: 45px;
       img {
-        width : auto;
-        height : 100%;
+        width: auto;
+        height: 100%;
       }
     }
   }
   .navigation-trigger {
-    display : block;
-    float : right;.vertical-center3lines();
+    display: block;
+    float: right;
+
+    .vertical-center3lines();
 
     a {
-      display : inline-block;
-      vertical-align : middle;
+      display: inline-block;
+      vertical-align: middle;
       &:link, &:visited {
-        color : black;
+        color: black;
       }
       &:hover, &:active, &:focus {
-        color : lighten(black, 25%);
+        color: lighten(black, 25%);
       }
       &:last-child {
-        margin-left : 20px;
+        margin-left: 20px;
         i {
-          font-size : 35px;
-          line-height : 30px;
+          font-size: 35px;
+          line-height: 30px;
         }
       }
     }
     i {
-      font-size : 25px;
-      line-height : 55px;
-      margin-right : 20px;
+      font-size: 25px;
+      line-height: 55px;
+      margin-right: 20px;
     }
   }
 }
 
 .mobile-links-list-container {
-  display : none;
-  overflow : hidden;
-  position : fixed;
-  z-index : 1000;
-  top : 55px;
-  width : 100%;
-  background-color : white;
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  top: 55px;
+  width: 100%;
+  background-color: white;
   ul {
-    margin : 0;
-    padding : 0;
-    border-top : 1px solid #ededed;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ededed;
+
     li {
-      display : block;
-      padding : 0;
-      list-style : none;
-      border-bottom : 1px solid #ededed;
-      background-image : none;
+      display: block;
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid #ededed;
+      background-image: none;
       a {
-        display : block;
-        font-size : 18px;
-        padding : 10px 0 10px 30px;
-        text-transform : uppercase;
+        display: block;
+        font-size: 18px;
+        padding: 10px 0 10px 30px;
+        text-transform: uppercase;
 
         &:link, &:visited {
-          color : black;
+          color: black;
         }
         &:hover, &:focus, &:active {
-          color : black;
-          background-color : #ebebeb;
+          color: black;
+          background-color: #ebebeb;
         }
       }
     }
@@ -142,30 +148,50 @@ html, body {
 }
 
 .pusher {
-  height : 55px;
+  height: 55px;
 }
 
 //########### end mobile ##########
 
-
 header {
+
+  .logo-container {
+    height: 165px;
+    a {
+      display: block;
+      .vertical-center3lines();
+    }
+
+  }
   .main-menu-container {
+    height: 165px;
     ul {
-      margin : 0;
-      padding : 0;
-      list-style : none;
-      text-align : right;
+      .vertical-center3lines();
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: right;
       li {
-        display : inline-block;
+        display: inline-block;
         a {
-          font-size : 14px;
-          padding : 0 20px;
-          text-transform : uppercase;
+          font-size: 14px;
+          padding: 0 40px;
+          text-transform: uppercase;
           &:link, &:visited {
-            color : @main-text-color;
+            color: @main-text-color;
           }
           &:hover, &:focus, &:active {
-            color : darken(@main-text-color,25%);
+            color: darken(@main-text-color, 25%);
+          }
+        }
+        &:last-child{
+          a{
+            padding-right: 0;
+          }
+        }
+        &:first-child{
+          a{
+            padding-left: 0;
           }
         }
       }
@@ -174,11 +200,22 @@ header {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
+  header{
+    .main-menu-container{
+      ul{
+        li{
+          a{
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*Ipad Landscape */
@@ -186,21 +223,21 @@ header {
 }
 
 /*Ipad Portrait*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 479px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
 }

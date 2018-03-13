@@ -265,7 +265,30 @@ body {
 .pusher {
   height: 55px;
 }
+header .logo-container {
+  height: 165px;
+}
+header .logo-container a {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header .main-menu-container {
+  height: 165px;
+}
 header .main-menu-container ul {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -276,7 +299,7 @@ header .main-menu-container ul li {
 }
 header .main-menu-container ul li a {
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 40px;
   text-transform: uppercase;
 }
 header .main-menu-container ul li a:link,
@@ -288,8 +311,19 @@ header .main-menu-container ul li a:focus,
 header .main-menu-container ul li a:active {
   color: #222222;
 }
+header .main-menu-container ul li:last-child a {
+  padding-right: 0;
+}
+header .main-menu-container ul li:first-child a {
+  padding-left: 0;
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header .main-menu-container ul li a {
+    padding: 0 20px;
+  }
+}
 /*Ipad Landscape */
 /*Ipad Portrait*/
 /* Small Devices, Tablets */
