@@ -40,4 +40,5 @@
         }
     });
     footerContainer.load('footer.html');
+    utilities.MoveExistingImagesToContainerBackground();
 }());

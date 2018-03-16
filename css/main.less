@@ -184,18 +184,42 @@ header {
             color: darken(@main-text-color, 25%);
           }
         }
-        &:last-child{
-          a{
+        &:last-child {
+          a {
             padding-right: 0;
           }
         }
-        &:first-child{
-          a{
+        &:first-child {
+          a {
             padding-left: 0;
           }
         }
       }
     }
+  }
+}
+
+.hero {
+  margin-bottom: 97px;
+  .hero-inner {
+    overflow: hidden;
+    padding-top: 44.736%;
+  }
+}
+
+.article-container {
+  .article-link a {
+    .ubuntu();
+    text-transform: uppercase;
+    &:link, &:visited {
+      color: #b4ad9e;
+    }
+    &:hover, &:focus, &:active {
+      color: darken(#b4ad9e, 20%);
+    }
+  }
+  .category-content{
+    margin:30px 0;
   }
 }
 
@@ -205,16 +229,19 @@ header {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  header{
-    .main-menu-container{
-      ul{
-        li{
-          a{
+  header {
+    .main-menu-container {
+      ul {
+        li {
+          a {
             padding: 0 20px;
           }
         }
       }
     }
+  }
+  .hero{
+    margin-bottom: 45px;
   }
 }
 
