@@ -208,6 +208,12 @@ header {
 }
 
 .article-container {
+  .article-image {
+    overflow: hidden;
+    padding-top: 66.67%;
+    margin:100px 0 30px;
+
+  }
   .article-link a {
     .ubuntu();
     text-transform: uppercase;
@@ -218,8 +224,23 @@ header {
       color: darken(#b4ad9e, 20%);
     }
   }
-  .category-content {
+  .article-content {
     margin: 30px 0;
+    .photoshopLineHeight(24, 14);
+    .photoshopLetterSpace(10);
+  }
+}
+
+.article-container.full{
+  padding: 0 80px;
+}
+
+.article-container.half{
+  &:nth-child(even){
+    padding-right: 80px;
+  }
+  &:nth-child(odd){
+    padding-left: 80px;
   }
 }
 

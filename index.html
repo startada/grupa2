@@ -28,10 +28,11 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Ubuntu:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
+
+
 <body>
 <div class="media-checker"></div>
 <!--[if lt IE 8]>
@@ -54,10 +55,10 @@
         <div class="row">
             <div class="col-md-12">
                 <article>
-                    <div class="article-container">
+                    <div class="article-container full">
                         <div class="article-link category-title"><a href="javascript:void(0)">Photodiary</a></div>
                         <h2>The perfect weekend getaway</h2>
-                        <div class="category-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error magnam necessitatibus nisi praesentium quas repellat vero vitae? Animi corporis culpa deserunt dolor ea eligendi eum, explicabo fugit id inventore laborum minima modi molestiae pariatur recusandae similique sunt temporibus voluptatum. Accusantium corporis eos expedita fugit, ipsa nesciunt nostrum praesentium quisquam vel voluptatem? A accusamus architecto asperiores blanditiis corporis dolor eligendi error, et exercitationem explicabo facere ipsam iste libero, molestias nam nesciunt nulla odio quam, quia quibusdam reiciendis repellendus reprehenderit sapiente sunt voluptate. A accusamus aliquam animi culpa deleniti dolore exercitationem id necessitatibus officia quam recusandae, suscipit unde veritatis voluptatem voluptatum?</div>
+                        <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error magnam necessitatibus nisi praesentium quas repellat vero vitae? Animi corporis culpa deserunt dolor ea eligendi eum, explicabo fugit id inventore laborum minima modi molestiae pariatur recusandae similique sunt temporibus voluptatum. Accusantium corporis eos expedita fugit, ipsa nesciunt nostrum praesentium quisquam vel voluptatem? A accusamus architecto asperiores blanditiis corporis dolor eligendi error, et exercitationem explicabo facere ipsam iste libero, molestias nam nesciunt nulla odio quam, quia quibusdam reiciendis repellendus reprehenderit sapiente sunt voluptate. A accusamus aliquam animi culpa deleniti dolore exercitationem id necessitatibus officia quam recusandae, suscipit unde veritatis voluptatem voluptatum?</div>
                         <div class="article-link category-link">
                             <a href="javascript:void(0)">Leave a commment</a>
                         </div>
@@ -66,31 +67,43 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="article-image background-image-listener-cover"><img src="https://picsum.photos/g/1140/510?random" alt="hero" class="background-image-source"></div>
-                <div class="article-link category-title"></div>
-                <h2></h2>
-                <div class="category-content"></div>
+            <div class="col-md-6 col-sm-6">
+                <div class="article-container half">
+                    <a href="https://picsum.photos/g/840/560?random" data-lightbox="homepage" data-title="More than just a music festival" >
+                        <div class="article-image background-image-listener-cover">
+                            <img src="https://picsum.photos/g/840/560?random" alt="hero" class="background-image-source">
+                        </div>
+                    </a>
+                    <div class="article-link category-title"><a href="javascript:void(0)">Lifestyle</a></div>
+                    <h2>More than just a music festival</h2>
+                    <div class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur in molestias necessitatibus nulla veniam? Animi architecto, atque cumque dolorem eum magni maiores maxime perferendis, porro praesentium quibusdam suscipit ullam?</div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="article-image"></div>
-                <div class="article-link category-title"></div>
-                <h2></h2>
-                <div class="category-content"></div>
+            <div class="col-md-6 col-sm-6">
+                <div class="article-conainer half">
+                    <div class="article-image"></div>
+                    <div class="article-link category-title"></div>
+                    <h2></h2>
+                    <div class="category-content"></div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="article-image"></div>
-                <div class="article-link category-title"></div>
-                <h2></h2>
-                <div class="category-content"></div>
+            <div class="col-md-6 col-sm-6">
+                <div class="article-conainer half">
+                    <div class="article-image"></div>
+                    <div class="article-link category-title"></div>
+                    <h2></h2>
+                    <div class="category-content"></div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="article-image"></div>
-                <div class="article-link category-title"></div>
-                <h2></h2>
-                <div class="category-content"></div>
+            <div class="col-md-6 col-sm-6">
+                <div class="article-conainer half">
+                    <div class="article-image"></div>
+                    <div class="article-link category-title"></div>
+                    <h2></h2>
+                    <div class="category-content"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -99,7 +112,7 @@
 <div class="footer-content-wrapper"></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-
+<script src="js/vendor/lightbox.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/common/utilities.min.js"></script>
 <script src="js/main.min.js"></script>

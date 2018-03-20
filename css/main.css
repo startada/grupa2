@@ -324,6 +324,11 @@ header .main-menu-container ul li:first-child a {
   overflow: hidden;
   padding-top: 44.736%;
 }
+.article-container .article-image {
+  overflow: hidden;
+  padding-top: 66.67%;
+  margin: 100px 0 30px;
+}
 .article-container .article-link a {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -338,8 +343,19 @@ header .main-menu-container ul li:first-child a {
 .article-container .article-link a:active {
   color: #857b67;
 }
-.article-container .category-content {
+.article-container .article-content {
   margin: 30px 0;
+  line-height: 171.42857143%;
+  letter-spacing: 0.01em;
+}
+.article-container.full {
+  padding: 0 80px;
+}
+.article-container.half:nth-child(even) {
+  padding-right: 80px;
+}
+.article-container.half:nth-child(odd) {
+  padding-left: 80px;
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
