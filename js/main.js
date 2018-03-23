@@ -5,9 +5,9 @@
  * Time: 11:55 AM
  */
 "use strict";
-(function(){
+(function() {
     var mobileMenuTrigger = $('.navigation-trigger a:last-child');
-
+    var articleContentHalf = $('.article-container.half').find('.article-content');
 
     /**
      * events
@@ -16,7 +16,7 @@
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
 
-    headerContainer.load('header.html',function(){
+    headerContainer.load('header.html', function() {
         var mobileMenuTrigger = $('.navigation-trigger a:last-child');
         if(utilities.IsExisty(mobileMenuTrigger)){
             mobileMenuTrigger.click(function(ev) {
@@ -39,6 +39,13 @@
             });
         }
     });
+
+    articleContentHalf.each(function(index) {
+        var height = $(this).height();
+        $(this).height(200);
+
+    });
+
     footerContainer.load('footer.html');
     utilities.MoveExistingImagesToContainerBackgroundCover();
 }());

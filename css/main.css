@@ -351,11 +351,14 @@ header .main-menu-container ul li:first-child a {
 .article-container.full {
   padding: 0 80px;
 }
-.article-container.half:nth-child(even) {
-  padding-right: 80px;
+.article-container.half {
+  border-bottom: 1px solid #cccccc;
 }
-.article-container.half:nth-child(odd) {
+.article-container.half.left {
   padding-left: 80px;
+}
+.article-container.half.right {
+  padding-right: 80px;
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */

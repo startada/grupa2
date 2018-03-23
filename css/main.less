@@ -236,12 +236,14 @@ header {
 }
 
 .article-container.half{
-  &:nth-child(even){
-    padding-right: 80px;
-  }
-  &:nth-child(odd){
-    padding-left: 80px;
-  }
+  border-bottom: 1px solid #cccccc;
+}
+
+.article-container.half.left{
+  padding-left: 80px;
+}
+.article-container.half.right{
+  padding-right: 80px;
 }
 
 /* Large Devices, Wide Screens */
