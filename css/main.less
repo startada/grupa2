@@ -211,7 +211,7 @@ header {
   .article-image {
     overflow: hidden;
     padding-top: 66.67%;
-    margin:100px 0 30px;
+    margin: 100px 0 30px;
 
   }
   .article-link a {
@@ -231,19 +231,44 @@ header {
   }
 }
 
-.article-container.full{
+.article-container.full {
   padding: 0 80px;
 }
 
-.article-container.half{
+.article-container.half {
   border-bottom: 1px solid #cccccc;
 }
 
-.article-container.half.left{
+.article-container.half.left {
   padding-left: 80px;
 }
-.article-container.half.right{
+
+.article-container.half.right {
   padding-right: 80px;
+}
+
+.gray-block {
+  margin:110px 0;
+  padding: 55px 0;
+  background-color: #f0f0f0;
+  .signup-form-container {
+    text-align: center;
+    border-bottom: 1px solid @main-text-color;
+    h2 {
+      color: #333333;
+    }
+    input[type='email']{
+      border: 0;
+      background-color: #f0f0f0;
+      width: 350px;
+    }
+    input[type='submit']{
+      .fontAwesome();
+      border: 0;
+      background-color: #f0f0f0;
+      font-size: 18px;
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */

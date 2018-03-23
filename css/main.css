@@ -360,6 +360,29 @@ header .main-menu-container ul li:first-child a {
 .article-container.half.right {
   padding-right: 80px;
 }
+.gray-block {
+  margin: 110px 0;
+  padding: 55px 0;
+  background-color: #f0f0f0;
+}
+.gray-block .signup-form-container {
+  text-align: center;
+  border-bottom: 1px solid #626262;
+}
+.gray-block .signup-form-container h2 {
+  color: #333333;
+}
+.gray-block .signup-form-container input[type='email'] {
+  border: 0;
+  background-color: #f0f0f0;
+  width: 350px;
+}
+.gray-block .signup-form-container input[type='submit'] {
+  font-family: FontAwesome;
+  border: 0;
+  background-color: #f0f0f0;
+  font-size: 18px;
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
