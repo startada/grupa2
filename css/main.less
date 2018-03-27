@@ -232,7 +232,7 @@ header {
 }
 
 .article-container.full {
-  padding: 0 80px;
+  margin: 0 80px;
 }
 
 .article-container.half {
@@ -240,11 +240,11 @@ header {
 }
 
 .article-container.half.left {
-  padding-left: 80px;
+  margin-left: 80px;
 }
 
 .article-container.half.right {
-  padding-right: 80px;
+  margin-right: 80px;
 }
 
 .gray-block {
@@ -254,19 +254,44 @@ header {
   .signup-form-container {
     text-align: center;
     border-bottom: 1px solid @main-text-color;
+    width: 400px;
+    margin:0 auto;
     h2 {
       color: #333333;
+      .photoshopLetterSpace(25);
+      margin-bottom: 80px;
     }
     input[type='email']{
       border: 0;
       background-color: #f0f0f0;
       width: 350px;
+      padding: 15px 0;
+      .placeholder-color(@main-text-color);
     }
     input[type='submit']{
       .fontAwesome();
       border: 0;
       background-color: #f0f0f0;
       font-size: 18px;
+    }
+  }
+}
+
+.show-more-container{
+  margin: 170px 0 170px;
+  text-align: center;
+  a.show-more{
+    border: 1px solid @main-text-color;
+    padding: 15.5px 31px;
+    display: inline-block;
+    min-width: 160px;
+    font-size: 20px;
+    &:link, &:visited {
+      color: @main-text-color;
+    }
+    &:hover, &:focus, &:active {
+      color: lighten(@main-text-color, 15%);
+      background-color: #f2f2f2;
     }
   }
 }
@@ -308,6 +333,17 @@ header {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  .article-container.full{
+    padding: 0;
+  }
+  .article-container.half.right, .article-container.half.left{
+    padding: 0;
+  }
+  .gray-block{
+    .signup-form-container{
+      width: 90%;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
