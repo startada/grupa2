@@ -7,8 +7,11 @@
 "use strict";
 (function() {
     var mobileMenuTrigger = $('.navigation-trigger a:last-child');
-    var articleContentHalf = $('.article-container.half').find('.article-content');
-    var title = $('.article-container.half h2');
+    var articleContentContainerHalf = $('.article-container.half');
+    var articleContentHalf = articleContentContainerHalf.find('.article-content');
+    var halfContainerImage = articleContentContainerHalf.find('.article-image');
+    var title = articleContentContainerHalf.find('h2');
+    var iconContent = '<i class="fa fa-search-plus"></i>';
 
     var contentSwitcherButton = $('.show-more');
 
@@ -19,6 +22,10 @@
 
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
+
+    halfContainerImage.each(function(){
+        $(this).append(iconContent);
+    });
 
     headerContainer.load('header.html', function() {
         var mobileMenuTrigger = $('.navigation-trigger a:last-child');
@@ -69,15 +76,17 @@
 
     contentSwitcherButton.click(function() {
         var content = $(this).html();
-        if(content==='Load More'){
-            content = 'Show Less'
+
+        if(content==='Load More '){
+            content = 'Show Less ';
         }
         else{
-            content = 'Load More'
+            content = 'Load More ';
         }
 
         $(this).html(content);
         $('.switch-container').toggleClass('opened');
+        $(this).toggleClass('opened');
     });
 
     footerContainer.load('footer.html');
