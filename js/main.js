@@ -7,7 +7,7 @@
 "use strict";
 (function() {
     var mobileMenuTrigger = $('.navigation-trigger a:last-child');
-    var articleContentContainerHalf = $('.article-container.half');
+    var articleContentContainerHalf = $('.article-container');
     var articleContentHalf = articleContentContainerHalf.find('.article-content');
     var halfContainerImage = articleContentContainerHalf.find('.article-image');
     var title = articleContentContainerHalf.find('h2');
