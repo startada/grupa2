@@ -152,6 +152,13 @@ html, body {
 }
 
 //########### end mobile ##########
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  .ubuntu-light();
+  color: #b4ad9e;
+  margin-bottom: 40px;
+}
 
 header {
   .logo-container {
@@ -368,30 +375,32 @@ header {
     }
   }
   .like-container {
-    .title {
-      text-transform: uppercase;
-      font-size: 14px;
-      .ubuntu-light();
-      color: #b4ad9e;
-      margin-bottom: 40px;
-    }
+
     .likes-wrapper {
       font-size: 0;
       margin: 0 -1.5%;
       .likes {
         display: inline-block;
+        vertical-align: top;
         width: 33.3%;
-        padding:0 1.5%;
+        padding: 0 1.5%;
         .image-wrapper {
           width: 100%;
-          &:after{
+          &:after {
             padding-top: 66.6%;
           }
         }
-
+        h3 {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
       }
     }
   }
+}
+
+.gray-block.single-page {
+  margin-bottom: 60px;
 }
 
 .show-more-container {
@@ -462,6 +471,66 @@ header {
 
 .switch-container.opened {
   max-height: 1050px;
+}
+
+.comments {
+  .comment {
+    margin-bottom: 60px;
+    .avatar {
+      display: inline-block;
+      vertical-align: top;
+      a {
+        display: block;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        .same-width-height(70px);
+        img {
+          .img-responsive-fixed-aspect-ratio();
+
+          filter: gray; /* IE6-9 */
+          -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+          filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+        }
+        .generic{
+          background-color: #cae5e0;
+          text-align: center;
+          line-height: 70px;
+          text-transform: uppercase;
+          color: white;
+          .ubuntu-light();
+          font-size: 34px;
+
+        }
+      }
+    }
+    .comment-content {
+      padding-left: 35px;
+      h5 {
+        font-weight: 700;
+        margin-top: 0;
+      }
+      width: calc(~'100% - 75px');
+      display: inline-block;
+      vertical-align: top;
+      p {
+        .photoshopLineHeight(24, 14);
+      }
+      a{
+        text-transform: uppercase;
+        margin-top: 20px;
+        display: block;
+        .ubuntu-light();
+        &:link, &:visited {
+          color: #b4ad9e;
+        }
+        &:hover, &:focus, &:active {
+          color: darken(#b4ad9e,20%);
+        }
+      }
+    }
+  }
 }
 
 .footer-container {

@@ -265,6 +265,14 @@ body {
 .pusher {
   height: 55px;
 }
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #b4ad9e;
+  margin-bottom: 40px;
+}
 header .logo-container {
   height: 165px;
 }
@@ -486,20 +494,13 @@ header .main-menu-container ul li:first-child a {
   background-color: #f0f0f0;
   font-family: FontAwesome;
 }
-.gray-block .like-container .title {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  color: #b4ad9e;
-  margin-bottom: 40px;
-}
 .gray-block .like-container .likes-wrapper {
   font-size: 0;
   margin: 0 -1.5%;
 }
 .gray-block .like-container .likes-wrapper .likes {
   display: inline-block;
+  vertical-align: top;
   width: 33.3%;
   padding: 0 1.5%;
 }
@@ -508,6 +509,13 @@ header .main-menu-container ul li:first-child a {
 }
 .gray-block .like-container .likes-wrapper .likes .image-wrapper:after {
   padding-top: 66.6%;
+}
+.gray-block .like-container .likes-wrapper .likes h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.gray-block.single-page {
+  margin-bottom: 60px;
 }
 .show-more-container {
   margin: 170px 0 30px;
@@ -563,6 +571,87 @@ header .main-menu-container ul li:first-child a {
 }
 .switch-container.opened {
   max-height: 1050px;
+}
+.comments .comment {
+  margin-bottom: 60px;
+}
+.comments .comment .avatar {
+  display: inline-block;
+  vertical-align: top;
+}
+.comments .comment .avatar a {
+  display: block;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  /**
+ ** how to use same-widt-height
+ **   if unit given in px
+ **   .same-width-height(65);
+ **        will produce:
+ **           width:65px;
+ **           height:65px;
+ **   other units need to be explicitly provided as an:
+ **   .same-width-height(65,vw)
+ **       will produce:
+ **         width:65vw;
+ **         height:65vw
+ **/
+  width: 70px;
+  height: 70px;
+}
+.comments .comment .avatar a img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+.comments .comment .avatar a .generic {
+  background-color: #cae5e0;
+  text-align: center;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+}
+.comments .comment .comment-content {
+  padding-left: 35px;
+  width: calc(100% - 75px);
+  display: inline-block;
+  vertical-align: top;
+}
+.comments .comment .comment-content h5 {
+  font-weight: 700;
+  margin-top: 0;
+}
+.comments .comment .comment-content p {
+  line-height: 171.42857143%;
+}
+.comments .comment .comment-content a {
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.comments .comment .comment-content a:link,
+.comments .comment .comment-content a:visited {
+  color: #b4ad9e;
+}
+.comments .comment .comment-content a:hover,
+.comments .comment .comment-content a:focus,
+.comments .comment .comment-content a:active {
+  color: #857b67;
 }
 .footer-container {
   background-color: #f0f0f0;
