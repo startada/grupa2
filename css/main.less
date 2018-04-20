@@ -234,7 +234,7 @@ header {
       color: white;
     }
   }
-  .article-image.three-quarters{
+  .article-image.three-quarters {
     padding-top: 75%;
     margin-top: 60px;
   }
@@ -256,13 +256,42 @@ header {
     .photoshopLetterSpace(10);
     .photoshopLineHeight(24, 14);
 
-    p{
+    p {
       margin: 0 0 25px 0;
     }
 
-    p.italic-paragraph{
+    p.italic-paragraph {
       font-style: italic;
       padding: 0 25px;
+    }
+  }
+  .article-share {
+    margin: 60px 0 0;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      li {
+        display: inline-block;
+        span {
+          text-transform: uppercase;
+          font-size: 13px;
+          color: #b4ad9e;
+          .ubuntu-light();
+        }
+        a {
+          font-size: 17px;
+          padding-left: 17px;
+          display: block;
+          &:link, &:visited {
+            color: #b4ad9e;
+          }
+          &:hover, &:focus, &:active {
+            color: darken(#b4ad9e, 20%);
+          }
+        }
+      }
     }
   }
 }
@@ -338,6 +367,31 @@ header {
       .fontAwesome();
     }
   }
+  .like-container {
+    .title {
+      text-transform: uppercase;
+      font-size: 14px;
+      .ubuntu-light();
+      color: #b4ad9e;
+      margin-bottom: 40px;
+    }
+    .likes-wrapper {
+      font-size: 0;
+      margin: 0 -1.5%;
+      .likes {
+        display: inline-block;
+        width: 33.3%;
+        padding:0 1.5%;
+        .image-wrapper {
+          width: 100%;
+          &:after{
+            padding-top: 66.6%;
+          }
+        }
+
+      }
+    }
+  }
 }
 
 .show-more-container {
@@ -410,9 +464,6 @@ header {
   max-height: 1050px;
 }
 
-
-
-
 .footer-container {
   background-color: #f0f0f0;
   .footer-container-inner {
@@ -439,14 +490,14 @@ header {
 
   .footer-container-inner.terms {
     padding-left: 80px;
-    a{
+    a {
       padding-right: 20px;
     }
 
   }
   .footer-container-inner.social {
     text-align: right;
-    a{
+    a {
       padding-left: 16px;
     }
   }
@@ -479,7 +530,7 @@ header {
     margin-bottom: 45px;
   }
 
-  .article-container.full, .article-container.half.right, .article-container.half.left{
+  .article-container.full, .article-container.half.right, .article-container.half.left {
     margin: 0;
   }
 }

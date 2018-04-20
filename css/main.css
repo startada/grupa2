@@ -379,6 +379,39 @@ header .main-menu-container ul li:first-child a {
   font-style: italic;
   padding: 0 25px;
 }
+.article-container .article-share {
+  margin: 60px 0 0;
+}
+.article-container .article-share ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.article-container .article-share ul li {
+  display: inline-block;
+}
+.article-container .article-share ul li span {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #b4ad9e;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.article-container .article-share ul li a {
+  font-size: 17px;
+  padding-left: 17px;
+  display: block;
+}
+.article-container .article-share ul li a:link,
+.article-container .article-share ul li a:visited {
+  color: #b4ad9e;
+}
+.article-container .article-share ul li a:hover,
+.article-container .article-share ul li a:focus,
+.article-container .article-share ul li a:active {
+  color: #857b67;
+}
 .article-container.full {
   margin: 0 80px;
 }
@@ -452,6 +485,29 @@ header .main-menu-container ul li:first-child a {
   border: 0;
   background-color: #f0f0f0;
   font-family: FontAwesome;
+}
+.gray-block .like-container .title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #b4ad9e;
+  margin-bottom: 40px;
+}
+.gray-block .like-container .likes-wrapper {
+  font-size: 0;
+  margin: 0 -1.5%;
+}
+.gray-block .like-container .likes-wrapper .likes {
+  display: inline-block;
+  width: 33.3%;
+  padding: 0 1.5%;
+}
+.gray-block .like-container .likes-wrapper .likes .image-wrapper {
+  width: 100%;
+}
+.gray-block .like-container .likes-wrapper .likes .image-wrapper:after {
+  padding-top: 66.6%;
 }
 .show-more-container {
   margin: 170px 0 30px;
