@@ -489,7 +489,6 @@ header {
         img {
           .img-responsive-fixed-aspect-ratio();
 
-          filter: gray; /* IE6-9 */
           -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
           filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
         }
@@ -529,6 +528,52 @@ header {
           color: darken(#b4ad9e,20%);
         }
       }
+    }
+  }
+}
+
+.comment-form{
+  .avatar {
+    display: inline-block;
+    vertical-align: top;
+    a {
+      display: block;
+      overflow: hidden;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      .same-width-height(70px);
+      img {
+        .img-responsive-fixed-aspect-ratio();
+
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+      }
+      .generic{
+        background-color: #cae5e0;
+        text-align: center;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: white;
+        .ubuntu-light();
+        font-size: 34px;
+      }
+    }
+  }
+  .form-container{
+    display: inline-block;
+    padding-left: 35px;
+    width: calc(~'100% - 75px');
+    textarea{
+      border: 1px solid #c8c8c8;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      width: 100%;
+      height:70px;
+      .ubuntu-light();
+      padding: 24px 30px;
+      text-transform: uppercase;
     }
   }
 }

@@ -12,6 +12,9 @@
     var halfContainerImage = articleContentContainerHalf.find('.article-image');
     var title = articleContentContainerHalf.find('h2');
     var iconContent = '<i class="fa fa-search-plus"></i>';
+    var name = 'milisav suljagic';
+    var avatar = $('.comment').find('.avatar');
+    console.log(avatar.length);
 
     var contentSwitcherButton = $('.show-more');
 
@@ -23,7 +26,7 @@
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
 
-    halfContainerImage.each(function(){
+    halfContainerImage.each(function() {
         $(this).append(iconContent);
     });
 
@@ -66,6 +69,16 @@
         //utilities.EqualizeElementsHeightByRow(articleContentHalf);
         $(this).trigger('resize');
 
+        avatar.each(function() {
+            var image = $(this).find('img');
+            if(image.length === 0){
+                var name = $(this).parent().find('h5').html();
+
+                $(this).find('a').append('<div class="generic">'+ splitNameToInitials(name) +'</div>');
+            }
+
+        })
+
     });
 
     $(window).resize($.throttle(250, function() {
@@ -77,10 +90,10 @@
     contentSwitcherButton.click(function() {
         var content = $(this).html();
 
-        if(content==='Load More '){
+        if(content === 'Load More '){
             content = 'Show Less ';
         }
-        else{
+        else {
             content = 'Load More ';
         }
 
@@ -91,5 +104,20 @@
 
     footerContainer.load('footer.html');
     utilities.MoveExistingImagesToContainerBackgroundCover();
+
+    function splitNameToInitials(fullName) {
+        var splitted = fullName.split(' ');
+        var inicijal = '';
+        for(var i = 0; i < splitted.length; i++) {
+            if(i < 2){
+                inicijal += splitted[i][0].toUpperCase();
+            }
+
+        }
+        // console.log(inicijal);
+        return inicijal;
+    }
+
+    splitNameToInitials(name);
 }());
 

@@ -607,8 +607,6 @@ header .main-menu-container ul li:first-child a {
   max-height: 100%;
   width: auto;
   height: auto;
-  filter: gray;
-  /* IE6-9 */
   -webkit-filter: grayscale(1);
   /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1);
@@ -652,6 +650,70 @@ header .main-menu-container ul li:first-child a {
 .comments .comment .comment-content a:focus,
 .comments .comment .comment-content a:active {
   color: #857b67;
+}
+.comment-form .avatar {
+  display: inline-block;
+  vertical-align: top;
+}
+.comment-form .avatar a {
+  display: block;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  /**
+ ** how to use same-widt-height
+ **   if unit given in px
+ **   .same-width-height(65);
+ **        will produce:
+ **           width:65px;
+ **           height:65px;
+ **   other units need to be explicitly provided as an:
+ **   .same-width-height(65,vw)
+ **       will produce:
+ **         width:65vw;
+ **         height:65vw
+ **/
+  width: 70px;
+  height: 70px;
+}
+.comment-form .avatar a img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+.comment-form .avatar a .generic {
+  background-color: #cae5e0;
+  text-align: center;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+}
+.comment-form .form-container {
+  display: inline-block;
+  padding-left: 35px;
+  width: calc(100% - 75px);
+}
+.comment-form .form-container textarea {
+  border: 1px solid #c8c8c8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+  height: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  padding: 24px 30px;
+  text-transform: uppercase;
 }
 .footer-container {
   background-color: #f0f0f0;
