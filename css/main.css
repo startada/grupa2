@@ -150,6 +150,27 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
+.spacer-60 {
+  height: 60px;
+}
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 34%;
+  width: 100%;
+  margin-top: 0;
+}
+.owl-theme .owl-nav .owl-prev {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  pointer-events: auto;
+}
+.owl-theme .owl-nav .owl-next {
+  background-color: yellow;
+  position: absolute;
+  right: 0;
+  pointer-events: auto;
+}
 .mobile-navigation {
   position: fixed;
   z-index: 1010;
@@ -515,7 +536,8 @@ header .main-menu-container ul li:first-child a {
   margin-bottom: 25px;
 }
 .gray-block.single-page {
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 65px;
 }
 .show-more-container {
   margin: 170px 0 30px;
@@ -715,6 +737,30 @@ header .main-menu-container ul li:first-child a {
   padding: 24px 30px;
   text-transform: uppercase;
 }
+.comment-form .form-container input.submit-control {
+  background-color: #cccccc;
+  border: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: white;
+  float: right;
+  text-transform: uppercase;
+  padding: 6px 15px;
+}
+.comment-form .form-container input.submit-control:hover {
+  background-color: #999999;
+}
+.comment-form .form-container input.submit-control:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.right-icon-menu {
+  margin: 60px 0 0px;
+}
 .right-icon-menu ul {
   text-transform: uppercase;
   padding: 0;
@@ -741,6 +787,9 @@ header .main-menu-container ul li:first-child a {
 }
 .right-icon-menu ul li a i {
   font-size: 20px;
+}
+.right-icon-menu ul li.budala-rekla {
+  padding-right: 40px;
 }
 .footer-container {
   background-color: #f0f0f0;

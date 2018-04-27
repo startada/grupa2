@@ -14,7 +14,7 @@
     var iconContent = '<i class="fa fa-search-plus"></i>';
     var name = 'milisav suljagic';
     var avatar = $('.comment').find('.avatar');
-    console.log(avatar.length);
+
 
     var contentSwitcherButton = $('.show-more');
 
@@ -22,6 +22,23 @@
     /**
      * events
      */
+
+    $('.owl-carousel').owlCarousel({
+        nav: true,
+        navText: ["sta", "rad"],
+        navSpeed: 1400,
+        dotsSpeed: 1400,
+        dragEndSpeed: 1400,
+        dots: true,
+        margin:10,
+        items: 1,
+        singleItem: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        autoplaySpeed: 1400,
+        loop: true,
+        autoplayHoverPause: true
+    });
 
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');

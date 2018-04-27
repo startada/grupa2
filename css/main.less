@@ -44,6 +44,31 @@ html, body {
   .playfair();
 }
 
+.spacer-60 {
+  height: 60px;
+}
+
+.owl-theme {
+  .owl-nav {
+    position: absolute;
+    top: 34%;
+    width: 100%;
+    margin-top:0;
+    .owl-prev {
+      background-color: red;
+      position: absolute;
+      left: 0;
+      pointer-events: auto;
+    }
+    .owl-next {
+      background-color: yellow;
+      position: absolute;
+      right: 0;
+      pointer-events: auto;
+    }
+  }
+}
+
 //############ mobile ################
 .mobile-navigation {
   position: fixed;
@@ -400,7 +425,8 @@ header {
 }
 
 .gray-block.single-page {
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 65px;
 }
 
 .show-more-container {
@@ -575,10 +601,27 @@ header {
       padding: 24px 30px;
       text-transform: uppercase;
     }
+    input.submit-control {
+      background-color: #cccccc;
+      border: 0;
+      .ubuntu-light();
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: white;
+      float: right;
+      text-transform: uppercase;
+      padding: 6px 15px;
+      &:hover {
+        background-color: darken(#ccc, 20%);
+      }
+      .clearfix();
+    }
   }
 }
 
 .right-icon-menu {
+  margin: 60px 0 0px;
   ul {
     text-transform: uppercase;
     padding: 0;
@@ -600,6 +643,9 @@ header {
           font-size: 20px;
         }
       }
+    }
+    li.budala-rekla {
+      padding-right: 40px;
     }
   }
 }
