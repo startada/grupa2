@@ -54,16 +54,7 @@
         }
     });
 
-    // $(window).on('load',function(){
-    // articleContentHalf.each(function(index) {
-    //     var height = $(this).height();
-    //     if(height>higherOneHeight){
-    //         higherOneHeight = height;
-    //     }
-    // });
-    // articleContentHalf.height(higherOneHeight);
 
-    // });
 
     $(window).on('load', function() {
         //utilities.EqualizeElementsHeightByRow(articleContentHalf);
@@ -114,7 +105,6 @@
             }
 
         }
-        // console.log(inicijal);
         return inicijal;
     }
 

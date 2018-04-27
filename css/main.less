@@ -492,7 +492,7 @@ header {
           -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
           filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
         }
-        .generic{
+        .generic {
           background-color: #cae5e0;
           text-align: center;
           line-height: 70px;
@@ -516,7 +516,7 @@ header {
       p {
         .photoshopLineHeight(24, 14);
       }
-      a{
+      a {
         text-transform: uppercase;
         margin-top: 20px;
         display: block;
@@ -525,14 +525,14 @@ header {
           color: #b4ad9e;
         }
         &:hover, &:focus, &:active {
-          color: darken(#b4ad9e,20%);
+          color: darken(#b4ad9e, 20%);
         }
       }
     }
   }
 }
 
-.comment-form{
+.comment-form {
   .avatar {
     display: inline-block;
     vertical-align: top;
@@ -549,7 +549,7 @@ header {
         -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
         filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
       }
-      .generic{
+      .generic {
         background-color: #cae5e0;
         text-align: center;
         line-height: 70px;
@@ -560,20 +560,46 @@ header {
       }
     }
   }
-  .form-container{
+  .form-container {
     display: inline-block;
     padding-left: 35px;
     width: calc(~'100% - 75px');
-    textarea{
+    textarea {
       border: 1px solid #c8c8c8;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
       width: 100%;
-      height:70px;
+      height: 70px;
       .ubuntu-light();
       padding: 24px 30px;
       text-transform: uppercase;
+    }
+  }
+}
+
+.right-icon-menu {
+  ul {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    li {
+      display: inline-block;
+      .ubuntu-light();
+      a {
+        margin-left: 15px;
+        &:link, &:visited {
+          color: #b4ad9e;
+        }
+        &:hover, &:focus, &:active {
+          color: #626262;
+        }
+        i {
+          font-size: 20px;
+        }
+      }
     }
   }
 }

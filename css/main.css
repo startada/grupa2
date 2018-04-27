@@ -715,6 +715,33 @@ header .main-menu-container ul li:first-child a {
   padding: 24px 30px;
   text-transform: uppercase;
 }
+.right-icon-menu ul {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+.right-icon-menu ul li {
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.right-icon-menu ul li a {
+  margin-left: 15px;
+}
+.right-icon-menu ul li a:link,
+.right-icon-menu ul li a:visited {
+  color: #b4ad9e;
+}
+.right-icon-menu ul li a:hover,
+.right-icon-menu ul li a:focus,
+.right-icon-menu ul li a:active {
+  color: #626262;
+}
+.right-icon-menu ul li a i {
+  font-size: 20px;
+}
 .footer-container {
   background-color: #f0f0f0;
 }
