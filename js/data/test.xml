@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <racun>
+        <proizvod>
+            <naziv>jaja</naziv>
+            <cena>110</cena>
+        </proizvod>
+        <kolicina>1</kolicina>
+    </racun>
+
+    <racun>
+        <proizvod naziv="jaja" cena="110"/>
+        <kolicina>1</kolicina>
+    </racun>
+
+    <racun>
+        <proizvod cena="110">jaja</proizvod>
+        <kolicina>1</kolicina>
+    </racun>
+</root>

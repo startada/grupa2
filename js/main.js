@@ -14,7 +14,7 @@
     var iconContent = '<i class="fa fa-search-plus"></i>';
     var name = 'milisav suljagic';
     var avatar = $('.comment').find('.avatar');
-
+    var carousel = $('.owl-carousel');
 
     var contentSwitcherButton = $('.show-more');
 
@@ -22,23 +22,24 @@
     /**
      * events
      */
-
-    $('.owl-carousel').owlCarousel({
-        nav: true,
-        navText: ["sta", "rad"],
-        navSpeed: 1400,
-        dotsSpeed: 1400,
-        dragEndSpeed: 1400,
-        dots: true,
-        margin:10,
-        items: 1,
-        singleItem: true,
-        autoplay: true,
-        autoplayTimeout: 4500,
-        autoplaySpeed: 1400,
-        loop: true,
-        autoplayHoverPause: true
-    });
+    if(utilities.IsExisty(carousel)){
+        carousel.owlCarousel({
+            nav               : true,
+            navText           : ["sta", "rad"],
+            navSpeed          : 1400,
+            dotsSpeed         : 1400,
+            dragEndSpeed      : 1400,
+            dots              : true,
+            margin            : 10,
+            items             : 1,
+            singleItem        : true,
+            autoplay          : true,
+            autoplayTimeout   : 4500,
+            autoplaySpeed     : 1400,
+            loop              : true,
+            autoplayHoverPause: true
+        });
+    }
 
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
@@ -71,8 +72,6 @@
         }
     });
 
-
-
     $(window).on('load', function() {
         //utilities.EqualizeElementsHeightByRow(articleContentHalf);
         $(this).trigger('resize');
@@ -82,7 +81,7 @@
             if(image.length === 0){
                 var name = $(this).parent().find('h5').html();
 
-                $(this).find('a').append('<div class="generic">'+ splitNameToInitials(name) +'</div>');
+                $(this).find('a').append('<div class="generic">' + splitNameToInitials(name) + '</div>');
             }
 
         })
@@ -126,5 +125,26 @@
     }
 
     splitNameToInitials(name);
+
+    $.ajax({
+        method:'post',
+        data:{
+            article_id:1
+        },
+        dataType:'json',
+        url:'js/data/users.json',
+        success:function(data){
+            
+            for(var i = 0; i < data.length; i++) {
+                var obj = data[i];
+                console.log(obj.ime);
+                console.log(obj.prezime);
+            }
+        },
+        error:function(data){
+            console.log('ERROR', data);
+        }
+    })
 }());
 
+var racun;

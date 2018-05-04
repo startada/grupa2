@@ -1,0 +1,18 @@
+[{
+  "proizvod": {
+    "cena": 110,
+    "naziv": "jaja",
+    "isteklo": false
+  },
+  "kolicina": "2",
+  "kupio": null
+},
+{
+  "proizvod": {
+    "cena": 110,
+    "naziv": "soda bikarbona",
+    "isteklo": false
+  },
+  "kolicina": "2",
+  "kupio": null
+}]
