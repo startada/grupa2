@@ -1,0 +1,20 @@
+[
+  {
+    "ime": "Branko",
+    "prezime": "Stevanovic",
+    "godina": 47,
+    "zaposlen": true
+  },
+  {
+    "ime": "Snezana",
+    "prezime": "Panic",
+    "godina": 41,
+    "zaposlen": true
+  },
+  {
+    "ime": "Tijana",
+    "prezime": "Zdravkovic",
+    "godina": 18,
+    "zaposlen": false
+  }
+]
