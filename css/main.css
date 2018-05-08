@@ -653,6 +653,7 @@ header .main-menu-container ul li:first-child a {
 .comments .comment .comment-content h5 {
   font-weight: 700;
   margin-top: 0;
+  text-transform: capitalize;
 }
 .comments .comment .comment-content p {
   line-height: 171.42857143%;

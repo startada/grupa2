@@ -13,8 +13,10 @@
     var title = articleContentContainerHalf.find('h2');
     var iconContent = '<i class="fa fa-search-plus"></i>';
     var name = 'milisav suljagic';
-    var avatar = $('.comment').find('.avatar');
+    var comments = $('.comment');
+    var avatar = comments.find('.avatar');
     var carousel = $('.owl-carousel');
+    var newCommentForm = $('#new-comment');
 
     var contentSwitcherButton = $('.show-more');
 
@@ -109,6 +111,23 @@
         $(this).toggleClass('opened');
     });
 
+    newCommentForm.submit(function(){
+        console.log('click');
+        var data = JSON.stringify($(this).serializeArray());
+        $.ajax({
+            method:'post',
+            data:data,
+            url:'https://jsonplaceholder.typicode.com/posts',
+            success:function(data1){
+                console.log(data1);
+            },
+            error:function(data){
+                console.log('ERROR',data);
+
+            }
+        })
+    });
+
     footerContainer.load('footer.html');
     utilities.MoveExistingImagesToContainerBackgroundCover();
 
@@ -127,24 +146,27 @@
     splitNameToInitials(name);
 
     $.ajax({
-        method:'post',
-        data:{
-            article_id:1
-        },
-        dataType:'json',
-        url:'js/data/users.json',
-        success:function(data){
-            
-            for(var i = 0; i < data.length; i++) {
-                var obj = data[i];
-                console.log(obj.ime);
-                console.log(obj.prezime);
+        method: 'get',
+
+        dataType: 'json',
+        url     : 'https://jsonplaceholder.typicode.com/posts/1/comments',
+        success : function(data) {
+
+            for(var i = 0; i < 2; i++) {
+                var nameFullArray  = data[i].name.split(' ');
+                var name = nameFullArray[0]+' '+nameFullArray[1];
+                var body = data[i].body;
+                $(comments.eq(i)).find('h5').html(name);
+                $(comments.eq(i)).find('p').html(body);
+
             }
+
+
         },
-        error:function(data){
+        error   : function(data) {
             console.log('ERROR', data);
         }
-    })
+    });
 }());
 
 var racun;
