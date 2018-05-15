@@ -19,7 +19,10 @@ $cetvrti = $_POST['cetvrti'];
 
 //Mail sending function
 $subject = 'ene subject';
-$to = 'brassta@gmail.com';
+//#############################################################################################
+//##promenite ovo ispod, budem li dobio jedan mail sa vasim zajebavanjem pobicu vas ko sirocice:
+$to = 'nekimail@gmail.com';
+//########################################################################################
 $from = "sindja@example.com";
 
 //data
