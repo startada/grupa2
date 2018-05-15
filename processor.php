@@ -14,7 +14,7 @@ $cetvrti = $_POST['cetvrti'];
 
 //ispisi
 
-echo '{"result":"done"}';
+
 
 
 //Mail sending function
